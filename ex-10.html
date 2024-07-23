@@ -1,0 +1,51 @@
+<!-- #سابق_10 . یک برنامه جاوا اسکریپت بنویسید تا تمام کاراکترهای یک رشته داده شده را که بیش از یک بار ظاهر می شوند حذف کنید.  -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="ex-10.css" >
+
+</head>
+
+<body>
+
+    <div>
+
+        <input id="myString" placeholder="Enter a string">
+
+        <button onclick="result()">Remove duplicate character</button>
+
+        <p id="demo"></p>
+
+    </div>
+
+    <script>
+
+        function result() {
+            
+            let myString = document.getElementById("myString").value;
+
+            let arrChar = myString.split("");
+
+            let resultArr = [];
+
+            for(let i = 0 ; i < arrChar.length ; i++) {
+
+                if( myString.indexOf(arrChar[i]) === myString.lastIndexOf(arrChar[i]) )
+
+                resultArr.push(arrChar[i]);
+
+            }
+
+            document.getElementById("demo").innerHTML = resultArr.join("");
+
+        }
+
+    </script>
+
+</body>
+</html>

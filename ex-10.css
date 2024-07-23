@@ -1,0 +1,36 @@
+div {
+    background-color: darkseagreen;
+    width: 40%;
+    padding: 2%;
+    margin-left: 28%;
+    margin-top: 30vh;
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px;
+    width: 58%;
+    padding: 5px;
+    background-color: darkkhaki;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+
+input:focus {
+    outline: 1px solid navy;
+}
+
+
+
+button {
+    padding: 5px;
+    background-color: darkslategray;
+    border-radius: 5px;
+    color: darkkhaki
+}
+
+p {
+    margin: 10px;
+}
